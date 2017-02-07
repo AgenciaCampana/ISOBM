@@ -1,0 +1,188 @@
+*{ font-family: 'Bebas Neue Regular'; }
+
+@font-face {
+font-family: 'Bebas Neue Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regular.woff') format('woff');
+}
+
+.cabecalho{
+	position: relative;
+	background: url(../img/rio-de-janeiro.jpg);
+	width: 100%;
+	height: 685px;
+	background-size: cover;
+	background-position: center;
+}
+
+.pelicula{
+	position: absolute;
+	background-color: rgba(255, 255, 255,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.menu{
+	position: fixed;
+	width: 220px;
+	height: 100%;
+	background-color: rgba(255, 255, 255,0.9);
+	padding: 10% 5%;
+	z-index: 3;
+}
+
+.menu li{
+	box-shadow: 3px 0 #34316e inset;
+	padding-left: 10px;
+	margin-top: 10px;
+	transition: all .5s;
+	display: block;
+
+}
+
+.menu li:hover{
+	transition: all .5s;
+	box-shadow: 200px 0px #34316e inset;
+	color: #fff;
+}
+
+.menu a{
+	text-decoration: none;
+}
+
+.menu ul a li{
+	font-size: 1.7em;
+	line-height: 40px;
+	text-decoration: none;
+	color: #34316e;
+}
+
+.btn-menu{
+	position: absolute;
+	z-index: 3;
+	margin: 20px;
+	background-color: rgba(0,0,0,0.0);
+	border: none;
+	font-size: 2.5em;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #34316e;
+}
+
+.content-header{ 
+	padding: 98px 0px;
+}
+
+.logo img{
+	width: 120px;
+	vertical-align: baseline;
+}
+
+.text-logo-big{
+	font-size: 45px;
+	color: #34316e;
+}
+
+.text-logo-normal{
+	font-size: 19px;
+	text-align: justify;
+	padding-top: 10px;
+	color: #34316e; 
+}
+
+.bloco-data, .bloco-local, .btn-inscreva-se{
+	text-align: center;
+	padding: 3% 20%;
+	color: #34316e;
+}
+
+.bloco-data p{
+	font-size: 1.8em;
+	margin: 0 0 -20px;
+}
+
+.bloco-data h3{
+	display: block;
+	border-bottom: 2px solid #bebed1;
+	font-size: 2.3em;
+}
+
+.bloco-local h3{
+	display: block;
+	border-bottom: 2px solid #bebed1;
+	font-size: 2.3em;
+}
+
+.btn-inscreva-se h2{
+	display: block;
+	border-bottom: 2px solid #bebed1;
+	font-size: 2.3em;
+}
+
+
+/* Transition */
+
+.menu{
+	transform: translateX(-220px);
+	transition: 0.5s;
+}
+
+.menu-active .btn-menu {
+	transform: translateX(0px);
+	transition: 0.5s;
+}
+
+
+/* Transition final*/
+
+.menu-active .menu {
+	transform: translateX(0px);
+	transition: 0.5s;
+}
+
+.menu-active .btn-menu {
+	transform: translateX(220px);
+	transition: 0.5s;
+}
+
+
+
+/* 
+.menu{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	padding: 47px 0px;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+
+.menu ul li{
+	display: inline-block;
+}
+
+.menu ul li a{
+	text-transform: uppercase;
+	padding: 0px 15px;
+	font-size: 24px;
+	color: #34316e;
+	text-decoration: none;
+}
+
+.content-header{
+	padding-top: 98px;
+}
+
+
+.text-total{
+	padding-left:5%;
+}
+
+.logo img{
+	width: 290px;
+	float: left;
+} */
+
+

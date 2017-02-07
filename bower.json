@@ -1,0 +1,19 @@
+{
+  "name": "isobm",
+  "version": "1.0",
+  "description": "Site feito para o ISOBM",
+  "main": "",
+  "authors": [
+    "Agência Campana"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
