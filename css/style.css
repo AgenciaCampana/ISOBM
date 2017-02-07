@@ -11,9 +11,9 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 	position: relative;
 	background: url(../img/rio-de-janeiro.jpg);
 	width: 100%;
-	height: 685px;
+	height: 680px;
 	background-size: cover;
-	background-position: center;
+	background-position: center; 
 }
 
 .pelicula{
@@ -31,32 +31,31 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 	padding: 10% 5%;
 	z-index: 3;
 }
+	.menu ul a li{
+		font-size: 1.7em;
+		line-height: 40px;
+		text-decoration: none;
+		color: #34316e;
+	}
 
-.menu li{
-	box-shadow: 3px 0 #34316e inset;
-	padding-left: 10px;
-	margin-top: 10px;
-	transition: all .5s;
-	display: block;
+	.menu li{
+		box-shadow: 3px 0 #34316e inset;
+		padding-left: 10px;
+		margin-top: 10px;
+		transition: all .5s;
+		display: block;
 
-}
+	}
 
-.menu li:hover{
-	transition: all .5s;
-	box-shadow: 200px 0px #34316e inset;
-	color: #fff;
-}
+	.menu li:hover{
+		transition: all .5s;
+		box-shadow: 200px 0px #34316e inset;
+		color: #fff;
+	}
 
-.menu a{
-	text-decoration: none;
-}
-
-.menu ul a li{
-	font-size: 1.7em;
-	line-height: 40px;
-	text-decoration: none;
-	color: #34316e;
-}
+	.menu a{
+		text-decoration: none;
+	}
 
 .btn-menu{
 	position: absolute;
@@ -71,7 +70,7 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 }
 
 .content-header{ 
-	padding: 98px 0px;
+	padding: 98px 0px;;
 }
 
 .logo img{
@@ -91,7 +90,7 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 	color: #34316e; 
 }
 
-.bloco-data, .bloco-local, .btn-inscreva-se{
+.bloco-data, .bloco-local, .btn-inscreva-se, .saiba-mais{
 	text-align: center;
 	padding: 3% 20%;
 	color: #34316e;
@@ -120,6 +119,10 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 	font-size: 2.3em;
 }
 
+.saiba-mais{
+	padding-top: 10px;
+	font-size: 1.5em;
+}
 
 /* Transition */
 
