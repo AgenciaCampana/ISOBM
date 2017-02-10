@@ -222,7 +222,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 
 		.img-doc{
 			height: 210px;
-			background-image: url('../img/adagmar.jpg');;;;;
+			background-image: url('../img/adagmar.png');;;;;
 			border-radius: 30px;;;;;;;
 			background-position: 50% 16%;
 			background-repeat: no-repeat;
@@ -486,7 +486,7 @@ footer{
 			text-align: justify;
 			line-height: 45px;
 			color: #34316e;
-			margin-top: 30px;;;
+			margin-top: 30px;
 		}
 	
  		.bloco-local, .btn-inscreva-se{
@@ -811,7 +811,7 @@ footer{
 	.img-doc{
 		width: 100%;
 		height: 210px;
-		background-image: url('../img/adagmar.jpg');
+		background-image: url('../img/adagmar.png');
 		background-size: cover;
 		background-position: center;
 		border-radius: 30px;
