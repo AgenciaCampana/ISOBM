@@ -1,5 +1,9 @@
 *{ font-family: 'Bebas Neue Regular'; }
 
+html, body{ width: 100%;
+
+}
+
 @font-face {
 font-family: 'Bebas Neue Regular';
 font-style: normal;
@@ -7,35 +11,34 @@ font-weight: normal;
 src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regular.woff') format('woff');
 }
 
-.cabecalho{
-	position: relative;
-	background: url(../img/rio-de-janeiro.jpg);
-	width: 100%;
-	height: 680px;
-	background-size: cover;
-	background-position: center; 
+@font-face {
+font-family: 'Gotham Medium Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Medium Regular'), url('../bower_components/fonts/GothamMedium Regular.woff') format('woff');
 }
 
-.pelicula{
-	position: absolute;
-	background-color: rgba(255, 255, 255,0.5);
-	width: 100%;
-	height: 100%;
+@font-face {
+font-family: 'Gotham Book Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Regular.woff') format('woff');
 }
 
+/* ----------------------------------------------------------- Menu ----------------------------------------------------------- */
 .menu{
-	position: fixed;
 	width: 220px;
 	height: 100%;
-	background-color: rgba(255, 255, 255,0.9);
 	padding: 10% 5%;
 	z-index: 3;
+	position: fixed;
 }
 	.menu ul a li{
 		font-size: 1.7em;
 		line-height: 40px;
 		text-decoration: none;
 		color: #34316e;
+		width: auto;
 	}
 
 	.menu li{
@@ -44,7 +47,6 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 		margin-top: 10px;
 		transition: all .5s;
 		display: block;
-
 	}
 
 	.menu li:hover{
@@ -57,77 +59,27 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 		text-decoration: none;
 	}
 
-.btn-menu{
-	position: absolute;
-	z-index: 3;
-	margin: 20px;
-	background-color: rgba(0,0,0,0.0);
-	border: none;
-	font-size: 2.5em;
-	cursor: pointer;
-	transition: 0.5s;
-	color: #34316e;
-}
+	.btn-menu{
+		position: absolute;
+		z-index: 3;
+		margin: 20px;
+		background-color: rgba(0,0,0,0.0);
+		border: none;
+		font-size: 2.5em;
+		cursor: pointer;
+		transition: 0.5s;
+		color: #34316e;
+	}
 
-.content-header{ 
-	padding: 98px 0px;;
-}
-
-.logo img{
-	width: 120px;
-	vertical-align: baseline;
-}
-
-.text-logo-big{
-	font-size: 45px;
-	color: #34316e;
-}
-
-.text-logo-normal{
-	font-size: 19px;
-	text-align: justify;
-	padding-top: 10px;
-	color: #34316e; 
-}
-
-.bloco-data, .bloco-local, .btn-inscreva-se, .saiba-mais{
-	text-align: center;
-	padding: 3% 20%;
-	color: #34316e;
-}
-
-.bloco-data p{
-	font-size: 1.8em;
-	margin: 0 0 -20px;
-}
-
-.bloco-data h3{
-	display: block;
-	border-bottom: 2px solid #bebed1;
-	font-size: 2.3em;
-}
-
-.bloco-local h3{
-	display: block;
-	border-bottom: 2px solid #bebed1;
-	font-size: 2.3em;
-}
-
-.btn-inscreva-se h2{
-	display: block;
-	border-bottom: 2px solid #bebed1;
-	font-size: 2.3em;
-}
-
-.saiba-mais{
-	padding-top: 10px;
-	font-size: 1.5em;
-}
-
-/* Transition */
+/* -----------------------------------------------------------  Transition menu ----------------------------------------------------------- */
 
 .menu{
+	transition: 0.5s;
 	transform: translateX(-220px);
+}
+
+.cabecalho, main{
+	transform: translateX(0px);
 	transition: 0.5s;
 }
 
@@ -137,55 +89,907 @@ src: local('Bebas Neue Regular'), url('../bower_components/fonts/BebasNeue Regul
 }
 
 
-/* Transition final*/
+/* ----------------------------------------------------------- Transition final ----------------------------------------------------------- */
 
 .menu-active .menu {
 	transform: translateX(0px);
 	transition: 0.5s;
 }
 
-.menu-active .btn-menu {
+.menu-active .btn-menu,
+.menu-active .cabecalho,
+.menu-active main {
 	transform: translateX(220px);
 	transition: 0.5s;
 }
 
+/* ----------------------------------------------------------- Cabecalho IMG/Transparência --------------------------------------------------- */
+.cabecalho{
+	background-image: url('../img/rio-de-janeiro.jpg');
+	width: 100%;
+	height: 950px;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	position: relative;
+	background-attachment: fixed;;
+
+}
+
+	.pelicula{
+		position: absolute;
+		background-color: rgba(255, 255, 255,0.7);
+		width: 100%;
+		height: 100%;
+	}
+
+/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
+
+.content-header{ padding-top: 210px;
+}
+	.logo-total{
+		margin-bottom: 80px;
+	}
+	.logo img{
+		width: 120px;
+		vertical-align: baseline;
+	}
+
+	.text-logo-big{
+		font-size: 45px;
+		color: #34316e;
+	}
+
+	.text-logo-normal{
+		font-size: 19px;
+		text-align: justify;
+		padding-top: 10px;
+		color: #34316e; 
+	}
+
+	.bloco-data, .bloco-local, .btn-inscreva-se, .saiba-mais{
+		text-align: center;
+		color: #34316e;
+		padding: 2% 20%;
+	}
+
+	.bloco-data p{
+		font-size: 1.8em;
+		margin: 0 0 -20px;
+	}
+
+	.bloco-data h3{
+		display: block;
+		font-size: 2.3em;
+	}
+
+	.bloco-local h3{
+		display: block;
+		font-size: 2.3em;
+	}
+
+	.btn-inscreva-se h2{
+		display: block;
+		font-size: 2.3em;
+	}
+
+	.saiba-mais{
+		padding-top: 85px;
+		font-size: 2.2em;
+	}
+
+	.saiba-mais a{
+		text-decoration: none;
+		color: #34316e;
+	}
+
+	.saiba-mais a:hover{
+		color: #a5a9cc;
+	}
+
+	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+	.text-topics{ 
+		padding: 25px 30px;
+	}
+		.topic-title{
+			text-align: center;
+			font-size: 28px;
+			color: #2b2568;
+		}
+		.topics p{ 
+			font-family: 'Gotham Medium Regular';
+			font-size: 12px;
+			color: #666666; 
+			font-weight: 300; 
+			line-height: 25px;
+		}
+
+			.topics i{
+				color: #2b2568;
+			}
+
+	.doctor{
+		padding-top: 25px;
+	}
+		.doctor p{
+		font-family: 'Gotham Medium Regular';
+		text-align: center;
+		font-size: 10px;
+		font-style: italic;
+		color: #666666;
+		padding-top: 13px;
+	}
+
+		.img-doc{
+			height: 210px;
+			background-image: url('../img/doctor2.jpg');;;;;
+			border-radius: 30px;;;;;;;
+			background-position: 50% 16%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 40%;
+			display: block;
+			margin: 0px auto;;;;
+		}
+
+	.total-content{
+		padding-top: 30px;
+	}
 
 
-/* 
-.menu{
+/* -----------------------------------------------------------  Parceiros -----------------------------------------------------------  */
+.partners{
+	background-color: #666666;
+	height: 80px;
+	border: 1px solid #fff;
+}
+
+/* -----------------------------------------------------------  Footer -----------------------------------------------------------  */
+
+footer{
 	position: relative;
 	width: 100%;
-	height: 70px;
-	padding: 47px 0px;
-	display: flex;
-	justify-content: center;
-	z-index: 1;
+	height: 150px;
+	background-image: url('../img/rio-de-janeiro.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
-.menu ul li{
-	display: inline-block;
-}
-
-.menu ul li a{
-	text-transform: uppercase;
-	padding: 0px 15px;
+.txt-footer p{
+	position: relative;
 	font-size: 24px;
+	margin-bottom: 0px;
 	color: #34316e;
-	text-decoration: none;
+	z-index: 2;
+	text-align: center;
 }
 
-.content-header{
-	padding-top: 98px;
+.credit-campana img{
+	display: block;
+	position: relative;
+	z-index: 2;
+	margin: 0px auto;
+	margin-top: 10px;
+	width: 120px;
+}
+
+.total-footer{
+	position: relative;
+	padding-top: 42px;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------  Media Queries -----------------------------------------------------------  
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------------------------  Extra Small devices ----------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+	.text-logo-normal{
+		display: none;
+	}
+
+	.text-logo-big{ 
+		font-size: 72px; 
+		text-align: center;
+	}
+
+	.text-logo-normal{
+		font-size: 30.8px;
+		text-align: justify;
+	}
+
+	/* ----------------------------------------------------------- Cabecalho IMG/Transparência --------------------------------------------------- */
+	.cabecalho{
+		height: 1080px;
+	}
+
+	.pelicula{
+		position: absolute;
+		background-color: rgba(255, 255, 255,0.7);
+		width: 100%;
+		height: 100%;
+	}
+
+	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
+	.content-header{ 
+		padding-top: 120px;
+	}
+	.info{
+		margin-top: 40px;
+	}	
+	.logo-total{
+		margin-bottom: 0px;
+	}
+
+		.logo img{
+			width: 226px;
+			vertical-align: baseline;
+		}
+
+		.mobile{
+			font-size: 35.99px;
+			text-align: center;
+			line-height: 45px;
+			color: #34316e;
+			margin-top: 15px;;;
+		}
+	
+ 		.bloco-local, .btn-inscreva-se{
+			padding: 1% 20%;
+		}
+
+		.date-group{
+			margin-bottom: 19px;
+		}
+		
+		.bloco-data{
+			padding: 0% 20%;
+		}
+
+		.bloco-data h3{
+			margin-bottom: 0px;
+		}
+
+		.bloco-local h3{ 
+			margin-top: 23px;
+		}
+
+		.btn-inscreva-se h2{
+			margin-top: 12px;
+		}
+
+		.bloco-data h3:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			left: 0px;
+			top: 15px;
+		}
+
+		.bloco-local h3:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			margin-left: 0px;
+			left: 0px;
+			top: 15px;
+		}
+		.btn-inscreva-se h2:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			margin-left: 0px;
+			left: 0px;
+			top: 15px;
+		}
+
+	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+	.text-topics{ 
+		padding: 25px 30px;
+	}
+
+	.total-content{
+		padding-top: 30px;
+	}
+
+	.sbpc img{ 
+		width: 292px;
+
+	}
+}
+
+@media screen and (max-width: 692px) {
+	.text-logo-big{ 
+		font-size: 40px !important;
+	}
+
+	.mobile{
+		font-size: 25px !important;
+
+	}
+	.logo{
+		margin: 0px;
+		width:100%;
+		height: 230px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.sbpc{
+		margin: 0px;
+		width:100%;
+		height: 130px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.cabecalho{
+	 height: 1000px !important; 
+	}
+}
+
+@media screen and (max-width: 494px) {
+	.cabecalho{
+		height: 1080px !important;
+	}
 }
 
 
-.text-total{
-	padding-left:5%;
+/* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width :992px) {
+	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
+	
+	.text-logo-normal{
+		display: none;
+	}
+
+	.text-logo-big{ 
+		font-size: 94px; 
+		text-align: justify;
+	}
+
+	.text-logo-normal{
+		font-size: 30.8px;
+		text-align: justify;
+	}
+
+	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
+	.content-header{ 
+		padding-top: 120px;
+	}
+	.info{
+		margin-top: 40px;
+	}	
+	.logo-total{
+		margin-bottom: 0px;
+	}
+
+		.logo img{
+			width: 226px;
+			vertical-align: baseline;
+		}
+
+		.mobile{
+			font-size: 39.99px;
+			text-align: justify;
+			line-height: 45px;
+			color: #34316e;
+			margin-top: 30px;;;
+		}
+	
+ 		.bloco-local, .btn-inscreva-se{
+			padding: 1% 20%;
+		}
+
+		.date-group{
+			margin-bottom: 19px;
+		}
+		
+		.bloco-data{
+			padding: 0% 20%;
+		}
+
+		.bloco-data h3{
+			margin-bottom: 0px;
+		}
+
+		.bloco-local h3{ 
+			margin-top: 23px;
+		}
+
+		.btn-inscreva-se h2{
+			margin-top: 12px;
+		}
+
+		.bloco-data h3:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			left: 0px;
+			top: 15px;
+		}
+
+		.bloco-local h3:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			margin-left: 0px;
+			left: 0px;
+			top: 15px;
+		}
+		.btn-inscreva-se h2:after{
+			height: 3px;
+			background-color: #7d82b1;
+			content: "";
+			width: 100%;
+			display: block;
+			position: relative;
+			margin-left: 0px;
+			left: 0px;
+			top: 15px;
+		}
+
+	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+		.text-topics{ 
+			padding: 25px 30px;
+		}
+			.topic-title{
+				text-align: center;
+				font-size: 28px;
+				color: #2b2568;
+			}
+			.topics p{ 
+				font-family: 'Gotham Medium Regular';
+				font-size: 12px;
+				color: #666666; 
+				font-weight: 300;
+			}
+
+				.topics i{
+					color: #2b2568;
+				}
+
+
+		.total-content{
+			padding-top: 30px;
+		}
+
+		.sbpc img{ 
+			width: 330px;
+
+		}
+	
 }
 
-.logo img{
-	width: 290px;
-	float: left;
-} */
 
+
+/* -----------------------------------------------------------  Medium devices ----------------------------------------------------------- */
+
+
+@media screen and (min-width: 992px) {
+	
+
+	.mobile{
+		display: none;
+	}
+
+
+	.text-logo-normal{
+		display: block;
+	}
+	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */	
+
+	.btn-menu{
+		display: none;
+	}
+
+	.menu{
+		display: flex;
+		justify-content: center;
+		padding: 47px 0px;
+		width: 100%;
+		transform: translateX(0px);
+		position: absolute;
+		transition: none;
+		height: 70px;
+	}
+
+	.menu li:hover{
+		box-shadow: 0px 0px;
+		color: #a5a9cc;
+		transition: none;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		margin-top: 0px;
+		box-shadow: 0px 0px;
+		transition: none;
+		padding: 0px 10px;
+		height: 35px;
+	}
+
+	.menu ul li:after{
+		left: 0;
+		width: 0;
+		height: 5px;
+		background-color: #a5a9cc;
+		content: "";
+		transition: width 0.2s;
+		display: block;
+	}
+
+	.menu ul li:hover:after{
+		width: 100%;
+	}
+
+	.menu ul li a{
+		text-transform: uppercase;
+		padding: 0px 15px;
+		font-size: 24px;
+		color: #34316e;
+		text-decoration: none;
+	}
+
+	.cabecalho, main{
+	transform: translateX(0px);
+	transition: none;
+	}
+
+	.menu-active .btn-menu,
+	.menu-active .cabecalho,
+	.menu-active main {
+	transform: translateX(0px);
+	transition: none;
+	}
+
+	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
+	
+	.text-logo-big{ 
+		font-size: 112px; 
+		text-align: justify;
+	}
+
+	.text-logo-normal{
+		font-size: 30.8px;
+		text-align: justify;
+	}
+
+	.bloco-data, .bloco-local, .btn-inscreva-se{
+		padding: 1% 0%;
+		width: 32.99%;
+	}
+
+	.bloco-data{
+		border-right: 3px solid #7d82b1;;;
+	}
+		.bloco-data h3{
+			margin-bottom: -8px;
+		}
+			.bloco-data h3:after{
+				height: 3px;
+				background-color: #7d82b1;
+				content: "";
+				width: 71%;
+				display: block;
+				position: relative;
+				margin-left: 0px;
+				left: 45px;
+				top: 1px;;
+			}
+
+	.bloco-local{
+		border-right: 3px solid #7d82b1;
+		border-left: 3px solid #7d82b1;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+		.bloco-local h3{ margin-bottom: -10px; padding-bottom: 25px;
+		}
+			.bloco-local h3:after{
+				height: 3px;
+				background-color: #7d82b1;
+				content: "";
+				width: 56%;;
+				display: block;
+				position: relative;
+				margin-left: 0px;
+				top: 24px;
+				left: 70px;
+			}
+
+	.btn-inscreva-se{
+		border-left: 3px solid #7d82b1;
+	}
+		.btn-inscreva-se h2{
+			padding-bottom: 25px;
+			margin-bottom: -10px;
+		}
+			.btn-inscreva-se h2:after{
+					height: 3px;
+					background-color: #7d82b1;
+					content: "";
+					width: 55%;
+					display: block;
+					position: relative;
+					margin-left: 0px;
+					left: 72px;
+					top: 24px;
+			}
+	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
+
+	.content-header{ 
+		padding-top: 210px;
+	}
+
+		.logo img{
+			width: 300px;
+			vertical-align: baseline;
+		}
+
+		.text-logo-big{
+			font-size: 92px;
+			color: #34316e;
+		}
+
+		.text-logo-normal{
+			font-size: 25.3px;
+			text-align: justify;
+			padding-top: 10px;
+			color: #34316e; 
+		}
+
+	
+		/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+
+		.text-topics{
+			float: right;
+		}
+		.doctor{
+			float: left;
+			padding-top: 30px;
+		}
+			.img-doc{
+				height: 337px;
+			}
+			.topics p{
+				font-size: 18px;
+				line-height: 35px;
+				font-family: 'Gotham Book Regular';
+			}
+
+		.parceiros{
+			float: right;
+		}
+		.sbpc{
+			float: left;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 239px;
+		}
+			.sbpc img{
+				width: 100%;
+			}
+				.logo img{
+					width: 100%;
+				}
+	
+}
+
+/* -----------------------------------------------------------  Large devices ----------------------------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+	.mobile{
+		display: none;
+	}
+
+
+	.text-logo-normal{
+		display: block;
+	}
+
+
+	.img-doc{
+		width: 100%;
+		height: 210px;
+		background-image: url('../img/doctor2.jpg');
+		background-size: cover;
+		background-position: center;
+		border-radius: 30px;
+	}
+	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */
+	.btn-menu{
+		display: none;
+	}
+
+	.menu{
+		display: flex;
+		justify-content: center;
+		padding: 47px 0px;
+		width: 100%;
+		transform: translateX(0px);
+		position: absolute;
+		transition: none;
+		height: 70px;
+	}
+
+	.menu li:hover{
+		box-shadow: 0px 0px;
+		color: #a5a9cc;
+		transition: none;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		margin-top: 0px;
+		box-shadow: 0px 0px;
+		transition: none;
+		padding: 0px 10px;
+		height: 35px;
+	}
+
+	.menu ul li:after{
+		left: 0;
+		width: 0;
+		height: 5px;
+		background-color: #a5a9cc;
+		content: "";
+		transition: width 0.2s;
+		display: block;
+	}
+
+	.menu ul li:hover:after{
+		width: 100%;
+	}
+
+	.menu ul li a{
+		text-transform: uppercase;
+		padding: 0px 15px;
+		font-size: 24px;
+		color: #34316e;
+		text-decoration: none;
+	}
+
+	.cabecalho, main{
+	transform: translateX(0px);
+	transition: none;
+	}
+
+	.menu-active .btn-menu,
+	.menu-active .cabecalho,
+	.menu-active main {
+	transform: translateX(0px);
+	transition: none;
+	}
+
+	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
+	
+	.text-logo-big{ 
+		font-size: 112px; 
+		text-align: justify;
+	}
+
+	.text-logo-normal{
+		font-size: 30.8px;
+		text-align: justify;
+	}
+
+	.bloco-data, .bloco-local, .btn-inscreva-se{
+		width: 33%;
+		padding: 0% 0%;
+	}
+
+	.bloco-data{
+		border-right: 3px solid #7d82b1;;;
+	}
+		.bloco-data h3{
+			margin-bottom: -8px;
+		}
+			.bloco-data h3:after{
+				height: 3px;
+				background-color: #7d82b1;
+				content: "";
+				width: 59%;
+				display: block;
+				position: relative;
+				margin-left: 0px;
+				left: 79px;
+				top: 0px;
+			}
+
+	.bloco-local{
+		border-right: 3px solid #7d82b1;
+		border-left: 3px solid #7d82b1;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+		.bloco-local h3{
+			padding-bottom: 25px;
+			margin-bottom: -10px;
+			margin-top: 12px;
+		}
+			.bloco-local h3:after{
+				height: 3px;
+				background-color: #7d82b1;
+				content: "";
+				width: 45%;
+				display: block;
+				position: relative;
+				margin-left: 0px;
+				left: 107px;
+				top: 15px;
+			}
+
+	.btn-inscreva-se{
+		border-left: 3px solid #7d82b1;
+	}
+		.btn-inscreva-se h2{
+			padding-bottom: 25px;
+			margin-bottom: -10px;
+		}
+			.btn-inscreva-se h2:after{
+					height: 3px;
+					background-color: #7d82b1;
+					content: "";
+					width: 44%;
+					display: block;
+					position: relative;
+					margin-left: 0px;
+					left: 109px;
+					top: 15px;
+			}
+	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+
+	.text-topics{
+		float: right;
+	}
+	.doctor{
+		float: left;
+	}
+		.img-doc{
+			height: 337px;
+		}
+		.topics p{
+			font-size: 18px;
+			line-height: 35px;
+			font-family: 'Gotham Book Regular';
+		}
+
+	.parceiros{
+		float: right;
+	}
+	.sbpc{
+		float: left;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 239px;
+	}
+		.sbpc img{
+			width: 100%;
+		}
+			.logo img{
+				width: 100%;
+			}
+
+}
 
