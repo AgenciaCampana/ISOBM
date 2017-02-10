@@ -465,6 +465,17 @@ footer{
 	.img-doc{
 		border-radius: 15px
 	}
+
+	.txt-footer p{ 
+		font-size: 15px;
+
+	}
+
+	.mobile{
+		font-size: large; 
+		line-height: 35px;
+
+	}
 }
 
 
