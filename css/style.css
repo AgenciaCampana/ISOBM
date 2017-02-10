@@ -222,7 +222,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 
 		.img-doc{
 			height: 210px;
-			background-image: url('../img/adagmar.png');;;;;
+			background-image: url('../img/adagmar.png');
 			border-radius: 30px;;;;;;;
 			background-position: 50% 16%;
 			background-repeat: no-repeat;
@@ -445,6 +445,28 @@ footer{
 		height: 1080px !important;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.bloco-data p{ 
+		font-size: 1.5em;
+
+	}
+
+	.bloco-data h3{ 
+		font-size: 2em;
+
+	}
+
+	.saiba-mais{
+		padding-top: 59px;
+
+	}
+
+	.img-doc{
+		border-radius: 15px
+	}
+}
+
 
 
 /* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
