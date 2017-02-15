@@ -1,7 +1,13 @@
 *{ font-family: 'Bebas Neue Regular'; }
 
-html, body{ width: 100%;
+html, body{ 
+	width: 100%;
+	height: 100%;
+	min-height: 100% !important
+}
 
+body{
+	overflow-x: hidden;
 }
 
 @font-face {
@@ -107,7 +113,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 .cabecalho{
 	background-image: url('../img/rio-de-janeiro.jpg');
 	width: 100%;
-	height: 950px;
+	height: 100vh;
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
@@ -129,6 +135,9 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 }
 	.logo-total{
 		margin-bottom: 80px;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
 	}
 	.logo img{
 		width: 120px;
@@ -145,6 +154,10 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 		text-align: justify;
 		padding-top: 10px;
 		color: #34316e; 
+	}
+
+	.info{
+		margin-top: 40px;
 	}
 
 	.bloco-data, .bloco-local, .btn-inscreva-se, .saiba-mais{
@@ -174,7 +187,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 	}
 
 	.saiba-mais{
-		padding-top: 85px;
+		padding-top: 45px;
 		font-size: 2.2em;
 	}
 
@@ -185,6 +198,15 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 
 	.saiba-mais a:hover{
 		color: #a5a9cc;
+	}
+
+	.video{
+		padding: 5% 0px;
+	}
+
+	.video p{
+		font-size: 30px;
+		text-align:center;
 	}
 
 	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
@@ -201,7 +223,8 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 			font-size: 12px;
 			color: #666666; 
 			font-weight: 300; 
-			line-height: 25px;
+			line-height: 25px; 
+			text-align: justify;
 		}
 
 			.topics i{
@@ -223,13 +246,13 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 		.img-doc{
 			height: 210px;
 			background-image: url('../img/adagmar.png');
-			border-radius: 30px;;;;;;;
+			border-radius: 30px;
 			background-position: 50% 16%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 40%;
 			display: block;
-			margin: 0px auto;;;;
+			margin: 0px auto;
 		}
 
 	.total-content{
@@ -290,7 +313,7 @@ footer{
 	}
 
 	.text-logo-big{ 
-		font-size: 72px; 
+		font-size: 57px; 
 		text-align: center;
 	}
 
@@ -300,9 +323,6 @@ footer{
 	}
 
 	/* ----------------------------------------------------------- Cabecalho IMG/Transparência --------------------------------------------------- */
-	.cabecalho{
-		height: 1080px;
-	}
 
 	.pelicula{
 		position: absolute;
@@ -313,17 +333,17 @@ footer{
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 	.content-header{ 
-		padding-top: 120px;
+		padding-top: 31px;
 	}
 	.info{
-		margin-top: 40px;
+		margin-top: 25px;
 	}	
 	.logo-total{
-		margin-bottom: 0px;
+		margin-bottom: 0px;;
 	}
 
 		.logo img{
-			width: 226px;
+			width: 185px;
 			vertical-align: baseline;
 		}
 
@@ -403,7 +423,8 @@ footer{
 	}
 
 	.sbpc img{ 
-		width: 292px;
+		width: 305px; 
+		padding: 3% 0px;;
 
 	}
 }
@@ -420,10 +441,10 @@ footer{
 	.logo{
 		margin: 0px;
 		width:100%;
-		height: 230px;
+		height: 187px;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 40px;
+		margin-bottom: 5px;
 	}
 
 	.sbpc{
@@ -432,17 +453,26 @@ footer{
 		height: 130px;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 	}
 
 	.cabecalho{
-	 height: 1000px !important; 
+	 height: 790px !important; 
 	}
 }
 
 @media screen and (max-width: 494px) {
 	.cabecalho{
-		height: 1080px !important;
+		height: 925px !important;
+	}
+
+	.content-header{ 
+		padding-top: 100px;
+
+	}
+
+	.txt-footer p{ font-size: 16px;;
+
 	}
 }
 
@@ -489,8 +519,9 @@ footer{
 	}
 
 	.text-logo-big{ 
-		font-size: 94px; 
-		text-align: justify;
+		font-size: 59px; 
+		text-align: justify; 
+		margin-left: 17px;
 	}
 
 	.text-logo-normal{
@@ -500,26 +531,32 @@ footer{
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 	.content-header{ 
-		padding-top: 120px;
+		padding-top: 37px;
 	}
 	.info{
-		margin-top: 40px;
+		margin-top: 20px;
+		width: 70%;
+		display: block;
+		margin: 20px auto;
 	}	
 	.logo-total{
 		margin-bottom: 0px;
+		width: 70%;
 	}
 
 		.logo img{
-			width: 226px;
+			width: 175px;
 			vertical-align: baseline;
 		}
 
 		.mobile{
-			font-size: 39.99px;
+			font-size: 26.9px;
 			text-align: justify;
-			line-height: 45px;
+			line-height: 33px;
 			color: #34316e;
-			margin-top: 30px;
+			width: 70%;
+			display: block;
+			margin: 15px auto;
 		}
 	
  		.bloco-local, .btn-inscreva-se{
@@ -606,8 +643,13 @@ footer{
 		}
 
 		.sbpc img{ 
-			width: 330px;
+			width: 330px; 
+			padding: 7% 0px;;
 
+		}
+
+		.saiba-mais{ 
+			padding-top: 25px;
 		}
 	
 }
@@ -770,7 +812,7 @@ footer{
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 
 	.content-header{ 
-		padding-top: 210px;
+		padding-top: 126px;
 	}
 
 		.logo img{
@@ -779,12 +821,13 @@ footer{
 		}
 
 		.text-logo-big{
-			font-size: 92px;
+			font-size: 80px;
 			color: #34316e;
+			margin-top: 0px;
 		}
 
 		.text-logo-normal{
-			font-size: 25.3px;
+			font-size: 22.29px;
 			text-align: justify;
 			padding-top: 10px;
 			color: #34316e; 
@@ -831,6 +874,11 @@ footer{
 /* -----------------------------------------------------------  Large devices ----------------------------------------------------------- */
 
 @media screen and (min-width: 1200px) {
+	
+	.info{
+		margin-top: 45px	
+	}
+
 	.mobile{
 		display: none;
 	}
@@ -849,6 +897,7 @@ footer{
 		background-position: center;
 		border-radius: 30px;
 	}
+
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */
 	.btn-menu{
 		display: none;
@@ -917,12 +966,13 @@ footer{
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
 	.text-logo-big{ 
-		font-size: 112px; 
-		text-align: justify;
+		font-size: 99px; 
+		text-align: justify; 
+		margin-top: 0px;;
 	}
 
 	.text-logo-normal{
-		font-size: 30.8px;
+		font-size: 27.4px;
 		text-align: justify;
 	}
 
@@ -976,8 +1026,9 @@ footer{
 		border-left: 3px solid #7d82b1;
 	}
 		.btn-inscreva-se h2{
-			padding-bottom: 16px;
-			margin-bottom: -9px;
+			padding-bottom: 25px;;
+			margin-bottom: -10px;
+			margin-top: 12px;;
 		}
 			.btn-inscreva-se h2:after{
 					height: 3px;
@@ -988,9 +1039,13 @@ footer{
 					position: relative;
 					margin-left: 0px;
 					left: 109px;
-					top: 7px;
+					top: 15px;
 			}
 	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
+	
+	.saiba-mais{ 
+		padding-top: 37px;
+	}
 
 	.text-topics{
 		float: right;
@@ -1025,4 +1080,62 @@ footer{
 			}
 
 }
+
+@media screen and (min-height: 1366px) {
+	.cabecalho{ 
+		height: 740px;
+
+	}
+	.content-header{ 
+		padding-top: 172px !important;
+		
+	}
+
+	.logo img{ 
+		width: 260px !important;
+
+	}
+	.info{ 
+		margin-right: 0px; 
+		width: 105% !important; 
+		font-size: 14px !important;;
+	}
+}
+
+@media screen and (min-height: 1024px) {
+	.content-header{ 
+		padding-top: 120px;
+	}
+
+	.logo-total{ 
+		width: 95%;
+	}
+
+	.text-logo-big{ 
+		font-size: 84px;
+	}
+
+	.logo img{ 
+		width: 220px;
+	}
+
+	.mobile{ 
+		font-size: 37.1px; 
+		width: 95%; 
+		margin-top: 35px; 
+		line-height: 49px;
+	}
+
+	.info{ 
+		width: 95%; 
+		font-size: 20px; 
+		margin-top: 60px;
+	}
+
+	.saiba-mais{
+		padding-top: 60px;
+	}
+}
+
+
 
