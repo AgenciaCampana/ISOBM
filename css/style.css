@@ -1,7 +1,8 @@
 *{ font-family: 'Bebas Neue Regular'; }
 
-html, body{ width: 100%;
-
+html, body{ 
+	width: 100%;
+	overflow-x: hidden;
 }
 
 @font-face {
@@ -26,6 +27,31 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 }
 
 /* ----------------------------------------------------------- Menu ----------------------------------------------------------- */
+svg.brv { 
+	width: 100%;
+	position: absolute; 
+	bottom: 0px;
+}
+.curva-2 {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	top: -60px;
+	left: 0px;
+	right: 0px;
+}
+svg.brv-2 {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    opacity: 0.5;
+    bottom: 0px;
+}
+
+.container-fluid.title-page {
+    position: relative;
+}
+
 .menu{
 	width: 220px;
 	height: 100%;
@@ -107,7 +133,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 .cabecalho{
 	background-image: url('../img/rio-de-janeiro.jpg');
 	width: 100%;
-	height: 950px;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
@@ -236,6 +262,25 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 		padding-top: 30px;
 	}
 
+	.video{
+		width: 100%;
+		height: 583px;
+		padding: 2% 2%;
+		text-align: center;
+	}
+
+	.video iframe{
+		width: 100%;
+		height: 92%;
+		display: block;
+		margin:0px auto;
+	}
+
+	.video p{
+		font-size: 25px;
+		color: #34316e;
+	}
+
 
 /* -----------------------------------------------------------  Parceiros -----------------------------------------------------------  */
 .partners{
@@ -300,9 +345,6 @@ footer{
 	}
 
 	/* ----------------------------------------------------------- Cabecalho IMG/Transparência --------------------------------------------------- */
-	.cabecalho{
-		height: 1080px;
-	}
 
 	.pelicula{
 		position: absolute;
@@ -434,15 +476,12 @@ footer{
 		justify-content: center;
 		margin-bottom: 40px;
 	}
-
-	.cabecalho{
-	 height: 1000px !important; 
-	}
 }
 
 @media screen and (max-width: 494px) {
-	.cabecalho{
-		height: 1080px !important;
+	.txt-footer p{ 
+		font-size: 15px;
+
 	}
 }
 
@@ -466,10 +505,6 @@ footer{
 		border-radius: 15px
 	}
 
-	.txt-footer p{ 
-		font-size: 15px;
-
-	}
 
 	.mobile{
 		font-size: large; 
@@ -606,7 +641,8 @@ footer{
 		}
 
 		.sbpc img{ 
-			width: 330px;
+			width: 330px; 
+			padding: 15px;
 
 		}
 	

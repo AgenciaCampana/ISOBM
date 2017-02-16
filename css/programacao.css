@@ -1,0 +1,36 @@
+.logo-page{
+	height: 300px;
+	width: 100%;
+	z-index: 3;
+	position: relative;
+}
+
+.image-logo{
+	width: 30%;
+	float: left;
+}
+
+.image-logo img{
+	width: 100%;
+}
+
+.text-logo{
+	width: 65%;
+	float: right;
+	text-align: justify;
+}
+
+.text-logo h1{
+	font-size: 11em;
+	color: #312e6f;
+}
+
+.title-page{
+	text-align: center;
+	padding: 1% 0% 0% 0%;
+	font-size: 3.5em;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5);
+	color: #312e6f;
+	margin-top: 90px;
+}
