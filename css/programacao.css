@@ -21,7 +21,7 @@
 }
 
 .text-logo h1{
-	font-size: 11em;
+	font-size: 6.7em;
 	color: #312e6f;
 }
 
@@ -34,3 +34,159 @@
 	color: #312e6f;
 	margin-top: 90px;
 }
+
+.total-option{
+	padding: 60px 0px;
+}
+.bloco-programacao {
+	text-align: center;
+}
+.programacao{
+	display: inline-block;
+	height: 395px;
+	width: 350px;
+	border-radius: 40px;
+	background-position: center;
+	background-size: cover;
+}
+
+.img-gallery{
+	height: 190px;
+	border-radius: 40px;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	margin-top: 35px;
+}
+
+.img-gallery:hover {
+	opacity: 0.5;
+}
+
+.space-center{
+	justify-content: center;
+}
+
+.space-center p{
+	text-align: center;
+	font-size: 2em;
+	padding: 3% 3%;
+	color: #312e6f;
+}
+
+.crumb{
+	margin-top: 40px;
+	font-size: 25px;
+	color: #a5a9cc;
+	text-align: center;
+}
+
+.crumb a{
+	color: #312e6f;
+	text-decoration: none;
+}
+
+.total-gallery{
+	margin-top: 30px;
+}
+
+.space-img{
+	padding: 1% 0%;
+}
+
+.pagination{
+	display: flex;
+	justify-content: center;
+}
+
+.pagination ul a{
+	float: left;
+}
+
+
+.pagination ul a.active{
+	background-color: #a5a9cc;
+}
+
+.pagination ul a { 
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:#312e6f;
+	display: block;
+	margin-left: 10px;
+}
+
+.pagination ul a:hover{
+	background-color: #a5a9cc;
+	transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px){
+	
+
+	.image-logo{
+		width: 100%;
+	}
+
+	.image-logo img{
+		width: 30%;
+		display: block;
+		margin: 0px auto;
+	}
+
+	.text-logo{
+		width: 100%;
+	}
+
+	.text-logo h1{
+		font-size: 4em;
+		padding: 3% 3%;
+		text-align: center;
+	}
+
+	.img-gallery{
+		height: 300px;
+		margin-top: 35px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.text-logo h1{
+		font-size: 7em;
+	}
+
+	.programacao{
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	.text-logo h1{
+		font-size: 9em;
+	}
+
+
+	.crumb{
+		text-align: left;
+	}
+
+.img-gallery{
+	height: 130px;
+
+	}
+
+
+}
+
+@media screen and (min-width: 1200px) {
+	.text-logo h1{
+		font-size: 11em;
+	}
+}
+
+

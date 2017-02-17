@@ -6,6 +6,7 @@
 	<title>ISOBM</title>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,10 +18,11 @@
 		<!-- Menu -->
 		<nav class="menu">
 			<ul class="list-unstyled">
-				<a href="#"><li>Home</li></a>
+				<a href="index.html"><li class="home-menu-roll">Home</li></a>
 				<a href="#"><li>Congress</li></a>
-				<a href="#"><li>Programmee</li></a>
-				<a href="#"><li>Gallery</li></a>
+				<a href="programmee.html"><li>Programmee</li></a>
+				<a href="gallery.html"><li>Gallery</li></a>
+				<a class="logo-iso-menu"><img src="img/isobm_logo.png" alt=""></a>
 				<a href="#"><li>News</li></a>
 				<a href="#"><li>Registration Forms</li></a>
 				<a href="#"><li>Contact us</li></a>
@@ -108,7 +110,7 @@
 						<p>I look forward to meeting you at this unique event.</p>
 
 
-<!-- 					<p><i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;News in clinical guidelines of EGTM – European Group on Tumor Markers.</p>
+<!-- 					<p><i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;News in clinical guidelines of EGTM – 							European Group on Tumor Markers.</p>
 						<p><i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Algorithms in cancer diagnosis – prostatic, lung, unknown primary cancer.</p>
 						<p><i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;Serum markers for Cutaneous and Uveal Melanoma – new guidelines.</p>
 						<p><i class="fa fa-angle-double-right" aria-hidden="true"></i>&ensp;pplications of tumor markers – screening, early diagnosis of recurrence.</p>
@@ -170,13 +172,6 @@
 			<div class="credit-campana"><img src="img/agencia-campana_logo.png" alt=""></div>
 		</div>
 	</footer>
-
-	<script>
-	// Script Menu Mobile
-	   $('.btn-menu').on('click touchstart', function(e){
-        $('html').toggleClass('menu-active');
-        e.preventDefault();
-    })
-	</script>
+	<script src="js/functions.js"></script>
 </body>
 </html>

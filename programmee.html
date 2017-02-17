@@ -6,6 +6,7 @@
 	<title>ISOBM</title>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/functions.js"></script>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -18,10 +19,11 @@
 		<!-- Menu -->
 		<nav class="menu">
 			<ul class="list-unstyled">
-				<a href="#"><li>Home</li></a>
+				<a href="index.html"><li class="home-menu-roll">Home</li></a>
 				<a href="#"><li>Congress</li></a>
-				<a href="#"><li>Programmee</li></a>
-				<a href="#"><li>Gallery</li></a>
+				<a href="programmee.html"><li>Programmee</li></a>
+				<a href="gallery.html"><li>Gallery</li></a>
+				<a href="inddex.html" class="logo-iso-menu"><li><img src="img/isobm_logo.png" alt=""></li></a>
 				<a href="#"><li>News</li></a>
 				<a href="#"><li>Registration Forms</li></a>
 				<a href="#"><li>Contact us</li></a>
@@ -60,7 +62,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<p>Programação</p>
+								<p>Programmee</p>
 							</div>
 						</div>
 					</div>
@@ -79,14 +81,17 @@
 		</div>
 	</header>
 	<main>
-		<div class="container total-content">
-			<div class="row">
-				<div class="col-md-6 bloco-pgrm">
-					<img src="img/agenda.png" alt="">
+	<div class="container crumb">
+		<p><a href="index.html">Home</a> > Programmee</a></p>
+	</div>
+		<div class="container total-option">
+			<div class="row space-center">
+				<div class="bloco-programacao col-md-6">
+					<div class="programacao" style="background-image: url(img/agenda.png);"></div>
 					<p>Agenda</p>
 				</div>
-				<div class="col-md-6 bloco-pgrm">
-					<img src="img/palestra.png" alt="">
+				<div class="bloco-programacao col-md-6">
+					<div class="programacao" style="background-image: url(img/palestra.png);"></div>
 					<p>Invited speakers</p>
 				</div>
 			</div>
@@ -101,12 +106,5 @@
 		</div>
 	</footer>
 
-	<script>
-	// Script Menu Mobile
-	   $('.btn-menu').on('click touchstart', function(e){
-        $('html').toggleClass('menu-active');
-        e.preventDefault();
-    })
-	</script>
 </body>
 </html>

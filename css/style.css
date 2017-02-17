@@ -96,6 +96,22 @@ svg.brv-2 {
 		transition: 0.5s;
 		color: #34316e;
 	}
+	
+	.logo-iso-menu{
+		display: none;
+	}
+
+	.logo-iso-menu img{
+		width: 180px;
+		padding: 0px 40px;
+	}
+	.fixed{
+		position: fixed !important;
+		background-color: rgba(255,255,255,0.96);
+		height: 120px !important;
+		padding: 10px 0px !important;
+	}
+
 
 /* -----------------------------------------------------------  Transition menu ----------------------------------------------------------- */
 
@@ -516,7 +532,7 @@ footer{
 
 
 /* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
-@media screen and (min-width: 768px) and (max-width :992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
 	.text-logo-normal{
