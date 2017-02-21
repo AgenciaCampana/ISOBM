@@ -30,7 +30,7 @@ src: local('Gotham Book Regular'), url('../bower_components/fonts/GothamBook Reg
 svg.brv { 
 	width: 100%;
 	position: absolute; 
-	bottom: 0px;
+	bottom: -1px;
 }
 .curva-2 {
 	position: absolute;
@@ -120,7 +120,7 @@ svg.brv-2 {
 	transform: translateX(-220px);
 }
 
-.cabecalho, main{
+.anchor-point, main{
 	transform: translateX(0px);
 	transition: 0.5s;
 }
@@ -139,7 +139,7 @@ svg.brv-2 {
 }
 
 .menu-active .btn-menu,
-.menu-active .cabecalho,
+.menu-active .anchor-point,
 .menu-active main {
 	transform: translateX(220px);
 	transition: 0.5s;
@@ -149,12 +149,12 @@ svg.brv-2 {
 .cabecalho{
 	background-image: url('../img/rio-de-janeiro.jpg');
 	width: 100%;
-	height: auto;
+	height: 98vh;
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
 	position: relative;
-	background-attachment: fixed;;
+	background-attachment: fixed;
 
 }
 
@@ -167,19 +167,45 @@ svg.brv-2 {
 
 /* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 
-.content-header{ padding-top: 210px;
-}
+.content-header{ 
+	position: relative; 
+	width: 100%; 
+	top: 21%; 
+}	
 	.logo-total{
-		margin-bottom: 80px;
 	}
+
+	.logo{
+		float: left;
+		max-width: 35%;
+	}
+
+	.logo-text{
+		max-width: 60%;
+		float: right;
+	}
+
 	.logo img{
 		width: 120px;
 		vertical-align: baseline;
 	}
-
+	
+	.info-sub{
+		position: relative;
+		top: 30%;
+		width: 100%;
+	}
 	.text-logo-big{
 		font-size: 45px;
 		color: #34316e;
+	}
+
+	.saiba{ 
+		position: absolute;
+		width: 100%; 
+		bottom: 0px; 
+		z-index: 3;
+
 	}
 
 	.text-logo-normal{
@@ -192,7 +218,7 @@ svg.brv-2 {
 	.bloco-data, .bloco-local, .btn-inscreva-se, .saiba-mais{
 		text-align: center;
 		color: #34316e;
-		padding: 2% 20%;
+		padding: 0% 16%;
 	}
 
 	.bloco-data p{
@@ -216,8 +242,8 @@ svg.brv-2 {
 	}
 
 	.saiba-mais{
-		padding-top: 85px;
 		font-size: 2.2em;
+		width: 100%;
 	}
 
 	.saiba-mais a{
@@ -238,17 +264,23 @@ svg.brv-2 {
 			font-size: 28px;
 			color: #2b2568;
 		}
-		.topics p{ 
-			font-family: 'Gotham Medium Regular';
-			font-size: 12px;
-			color: #666666; 
-			font-weight: 300; 
-			line-height: 25px;
-		}
-
-			.topics i{
-				color: #2b2568;
+			.topics p{ 
+				font-family: 'Gotham Medium Regular';
+				font-size: 12px;
+				color: #666666; 
+				font-weight: 300; 
+				line-height: 25px;
 			}
+
+				.topics i{
+					color: #2b2568;
+				}
+					.topics h3{
+						text-align: center;
+						font-size: 45px;
+						margin-bottom: 30px;
+						color: #312e6f;
+					}
 
 	.doctor{
 		padding-top: 25px;
@@ -280,20 +312,21 @@ svg.brv-2 {
 
 	.video{
 		width: 100%;
-		height: 583px;
+		height: 570px;;
 		padding: 2% 2%;
 		text-align: center;
+		position: relative;
 	}
 
 	.video iframe{
 		width: 100%;
-		height: 92%;
-		display: block;
+		height: 85%;
 		margin:0px auto;
+		display: block;
 	}
 
 	.video p{
-		font-size: 25px;
+		font-size: 51px;
 		color: #34316e;
 	}
 
@@ -351,13 +384,31 @@ footer{
 	}
 
 	.text-logo-big{ 
-		font-size: 72px; 
+		font-size: 73px; 
 		text-align: center;
 	}
 
 	.text-logo-normal{
 		font-size: 30.8px;
 		text-align: justify;
+	}
+
+	.logo{ 
+		max-width: 100%; 
+		text-align: center; 
+		width: 100%;
+
+	}
+
+	.logo-text{ 
+		max-width: 100%; 
+		text-align: center; 
+		width: 100%;
+
+	}
+
+	.info-sub{ top: 18%;
+
 	}
 
 	/* ----------------------------------------------------------- Cabecalho IMG/Transparência --------------------------------------------------- */
@@ -370,11 +421,9 @@ footer{
 	}
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
-	.content-header{ 
-		padding-top: 120px;
+	.content-header{ top: 12%;
 	}
 	.info{
-		margin-top: 40px;
 	}	
 	.logo-total{
 		margin-bottom: 0px;
@@ -461,7 +510,8 @@ footer{
 	}
 
 	.sbpc img{ 
-		width: 292px;
+		width: 292px; 
+		position: relative;
 
 	}
 }
@@ -490,7 +540,8 @@ footer{
 		height: 130px;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		position: relative;
 	}
 }
 
@@ -499,6 +550,14 @@ footer{
 		font-size: 15px;
 
 	}
+	.cabecalho{
+		height: 1080px !important;
+	}
+
+	.video p{
+		font-size:40px; 
+	}
+
 }
 
 @media screen and (max-width: 320px) {
@@ -525,14 +584,13 @@ footer{
 	.mobile{
 		font-size: large; 
 		line-height: 35px;
-
 	}
 }
 
 
 
 /* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
 	.text-logo-normal{
@@ -540,7 +598,7 @@ footer{
 	}
 
 	.text-logo-big{ 
-		font-size: 94px; 
+		font-size: 98px; 
 		text-align: justify;
 	}
 
@@ -549,9 +607,26 @@ footer{
 		text-align: justify;
 	}
 
+	.info-sub{
+		top: 17%; 
+	}
+
+	.logo{ max-width: 30%;
+
+	}
+
+	.logo-text{ max-width: 65%;
+
+	}
+
+	.logo-iso-menu{
+		display: none !important;
+	}
+
+
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
-	.content-header{ 
-		padding-top: 120px;
+	.content-header{
+	 top: 15%;
 	}
 	.info{
 		margin-top: 40px;
@@ -658,7 +733,7 @@ footer{
 
 		.sbpc img{ 
 			width: 330px; 
-			padding: 15px;
+			padding: 15px;;
 
 		}
 	
@@ -679,6 +754,10 @@ footer{
 
 	.text-logo-normal{
 		display: block;
+	}
+
+	.logo{ max-width: 37%;
+
 	}
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */	
 
@@ -740,7 +819,7 @@ footer{
 	}
 
 	.menu-active .btn-menu,
-	.menu-active .cabecalho,
+	.menu-active .anchor-point,
 	.menu-active main {
 	transform: translateX(0px);
 	transition: none;
@@ -821,8 +900,7 @@ footer{
 			}
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 
-	.content-header{ 
-		padding-top: 210px;
+	.content-header{;
 	}
 
 		.logo img{
@@ -831,12 +909,12 @@ footer{
 		}
 
 		.text-logo-big{
-			font-size: 92px;
+			font-size: 117px;
 			color: #34316e;
 		}
 
 		.text-logo-normal{
-			font-size: 25.3px;
+			font-size: 32.3px;
 			text-align: justify;
 			padding-top: 10px;
 			color: #34316e; 
@@ -969,12 +1047,12 @@ footer{
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
 	.text-logo-big{ 
-		font-size: 112px; 
+		font-size: 142px; 
 		text-align: justify;
 	}
 
 	.text-logo-normal{
-		font-size: 30.8px;
+		font-size: 38.9px;
 		text-align: justify;
 	}
 
@@ -1067,10 +1145,10 @@ footer{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 239px;
+		height: 260px;
 	}
 		.sbpc img{
-			width: 100%;
+			width: 70%;
 		}
 			.logo img{
 				width: 100%;
