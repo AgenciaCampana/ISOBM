@@ -203,7 +203,7 @@ svg.brv-2 {
 	.saiba{ 
 		position: absolute;
 		width: 100%; 
-		bottom: 0px; 
+		bottom: 30px; 
 		z-index: 3;
 
 	}
@@ -276,7 +276,7 @@ svg.brv-2 {
 					color: #2b2568;
 				}
 					.topics h3{
-						text-align: center;
+						text-align: left;
 						font-size: 45px;
 						margin-bottom: 30px;
 						color: #312e6f;
@@ -297,13 +297,13 @@ svg.brv-2 {
 		.img-doc{
 			height: 210px;
 			background-image: url('../img/adagmar.png');
-			border-radius: 30px;;;;;;;
+			border-radius: 30px;
 			background-position: 50% 16%;
 			background-repeat: no-repeat;
 			background-size: cover;
 			width: 40%;
 			display: block;
-			margin: 0px auto;;;;
+			margin: 0px auto;
 		}
 
 	.total-content{
@@ -312,7 +312,7 @@ svg.brv-2 {
 
 	.video{
 		width: 100%;
-		height: 570px;;
+		height: 570px;
 		padding: 2% 2%;
 		text-align: center;
 		position: relative;
@@ -514,6 +514,10 @@ footer{
 		position: relative;
 
 	}
+
+	.text-logo-big{ 
+		font-size: 60px !important;
+	}
 }
 
 @media screen and (max-width: 692px) {
@@ -566,7 +570,7 @@ footer{
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 364px) {
 	.bloco-data p{ 
 		font-size: 1.5em;
 
@@ -817,14 +821,6 @@ footer{
 		width: 100%;
 	}
 
-	.menu ul li a{
-		text-transform: uppercase;
-		padding: 0px 15px;
-		font-size: 24px;
-		color: #34316e;
-		text-decoration: none;
-	}
-
 	.cabecalho, main{
 	transform: translateX(0px);
 	transition: none;
@@ -1034,14 +1030,6 @@ footer{
 
 	.menu ul li:hover:after{
 		width: 100%;
-	}
-
-	.menu ul li a{
-		text-transform: uppercase;
-		padding: 0px 15px;
-		font-size: 24px;
-		color: #34316e;
-		text-decoration: none;
 	}
 
 	.cabecalho, main{

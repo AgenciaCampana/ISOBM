@@ -1,4 +1,17 @@
 
+
+.assinatura{
+	margin-top: 30px !important;
+	margin-bottom: 0px;
+	font-size: 25px !important;
+	color: #34316e !important;
+}
+
+.cargo{
+	font-size: 16px !important;
+	font-style: italic;
+}
+
 .cabecalho2{
 	background-image: url('../img/rio-de-janeiro.jpg');
 	width: 100%;
@@ -43,7 +56,7 @@
 	text-align: justify;
 	width: 41%;
 	color: #312e6f;
-	padding-left: 10px;;
+	padding-left: 10px;
 }
 
 .center{
@@ -51,7 +64,7 @@
 	top: 130px;
 	position: relative;
 	justify-content: center;
-	align-items: center;;
+	align-items: center;
 }
 
 .title-page{
@@ -152,6 +165,13 @@
 	color: #312e6f;
 }
 
+.title-location2{
+	font-size: 1em;
+	font-weight: 600;
+	color: #312e6f;
+	margin-top: 0px;
+}
+
 
 .pagination ul a.active{
 	background-color: #a5a9cc;
@@ -211,6 +231,83 @@
 	margin-bottom: 40px;
 }
 
+.content-section{
+	display: flex;
+	justify-content: center;
+}
+
+.title-info h3{
+	font-size: 24px;
+	color: #312e6f;
+	margin-top: 0px;
+}
+
+.title-info{
+	margin-bottom: 20px;
+}
+
+.content-section section{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 40px;
+}
+ 
+.content-section section h4{
+	font-size: 30px;
+	color: #312e6f;
+	margin-top: 0px;
+}
+
+.content-section section p{
+	font-size: 20px;
+	color: #a5a9cc;
+}
+
+.content-section section li{
+	font-size: 20px;
+	color: #a5a9cc;
+}
+
+.suport{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #a5a9cc;
+}
+
+.suport h4{
+	text-align: center;
+	font-size: 30px;
+	color: #312e6f;
+}
+
+.suport .one img{
+	width: 35%;
+	padding-top: 5%;
+	filter: grayscale(1);
+}
+
+.suport .two img{
+	width: 70%;
+	padding-top: 5%;
+	filter: grayscale(1);
+}
+
+.organization{
+	margin-bottom: 70px;
+}
+
+.where{
+	margin-bottom: 40px;
+}
+
+.location p, .location a {
+	font-family: 'Gotham Book Regular';
+	font-size: 21px;
+	text-transform: uppercase;
+}
+
 @media screen and (max-width: 768px){
 	
 
@@ -248,8 +345,8 @@
 	.logo2{;
 		text-align: center;
 		display: block;
-		margin: 0px auto;;
-		max-width: 200px;;
+		margin: 0px auto;
+		max-width: 200px;
 	}
 
 	.center{
@@ -257,9 +354,19 @@
 	}
 
 	.logo2 img{;
-	max-width: 200px;;
+	max-width: 200px;
 
 	}
+
+	.title-info h3, .content-section section{
+		text-align: center;
+		font-size: 30px;
+	}
+
+		.one , .two{
+		margin-top: 50px;
+	}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -279,13 +386,20 @@
 		top: 100px;
 	}
 
+	.content-section section{
+		text-align: left;
+	}
+	
+
+	.one , .two{
+		margin-top: 50px;
+	}
 }
 
 @media screen and (min-width: 992px) {
 	.text-logo h1{
 		font-size: 9em;
 	}
-
 
 	.crumb{
 		text-align: left;
@@ -296,10 +410,13 @@
 
 	}
 
-		.text-logo-big2{
+	.text-logo-big2{
 		font-size: 78px;;
 	}
-
+	
+	.content-section section{
+		text-align: left;
+	}
 
 }
 
@@ -307,5 +424,9 @@
 @media screen and (min-width: 1200px) {
 	.text-logo-big2{
 		font-size: 95px;
+	}
+
+	.content-section section{
+		text-align: left;
 	}
 }
