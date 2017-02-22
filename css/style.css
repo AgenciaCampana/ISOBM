@@ -557,6 +557,12 @@ footer{
 	.video p{
 		font-size:40px; 
 	}
+	
+
+	.location, .location a{
+		font-size: 19px !important;
+	}
+
 
 }
 
@@ -585,6 +591,12 @@ footer{
 		font-size: large; 
 		line-height: 35px;
 	}
+
+
+	.logo-iso-menu{
+		display: none;
+	}
+
 }
 
 
