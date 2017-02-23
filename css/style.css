@@ -59,7 +59,7 @@ svg.brv-2 {
 	z-index: 3;
 	position: fixed;
 }
-	.menu ul a li{
+	.menu ul li{
 		font-size: 1.7em;
 		line-height: 40px;
 		text-decoration: none;
@@ -81,8 +81,9 @@ svg.brv-2 {
 		color: #fff;
 	}
 
-	.menu a{
+	.menu li a{
 		text-decoration: none;
+		color: inherit;
 	}
 
 	.btn-menu{
@@ -172,9 +173,6 @@ svg.brv-2 {
 	width: 100%; 
 	top: 21%; 
 }	
-	.logo-total{
-	}
-
 	.logo{
 		float: left;
 		max-width: 35%;
@@ -439,7 +437,7 @@ footer{
 			text-align: center;
 			line-height: 45px;
 			color: #34316e;
-			margin-top: 15px;;;
+			margin-top: 15px;
 		}
 	
  		.bloco-local, .btn-inscreva-se{
@@ -570,7 +568,7 @@ footer{
 
 }
 
-@media screen and (max-width: 364px) {
+@media screen and (max-width: 320px) {
 	.bloco-data p{ 
 		font-size: 1.5em;
 
@@ -624,7 +622,7 @@ footer{
 	}
 
 	.info-sub{
-		top: 17%; 
+		top: 12%; 
 	}
 
 	.logo{ max-width: 30%;
@@ -749,7 +747,7 @@ footer{
 
 		.sbpc img{ 
 			width: 330px; 
-			padding: 15px;;
+			padding: 15px;
 
 		}
 	
@@ -772,7 +770,8 @@ footer{
 		display: block;
 	}
 
-	.logo{ max-width: 37%;
+	.logo{ 
+		max-width: 37%;
 
 	}
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */	
@@ -851,7 +850,7 @@ footer{
 	}
 
 	.bloco-data{
-		border-right: 3px solid #7d82b1;;;
+		border-right: 3px solid #7d82b1;
 	}
 		.bloco-data h3{
 			margin-bottom: 0px;
@@ -865,7 +864,7 @@ footer{
 				position: relative;
 				margin-left: 0px;
 				left: 45px;
-				top: 10px;;
+				top: 10px;
 			}
 
 	.bloco-local{
@@ -880,7 +879,7 @@ footer{
 				height: 3px;
 				background-color: #7d82b1;
 				content: "";
-				width: 56%;;
+				width: 56%;
 				display: block;
 				position: relative;
 				margin-left: 0px;
@@ -908,7 +907,7 @@ footer{
 			}
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 
-	.content-header{;
+	.content-header{
 	}
 
 		.logo img{
@@ -1062,7 +1061,7 @@ footer{
 	}
 
 	.bloco-data{
-		border-right: 3px solid #7d82b1;;;
+		border-right: 3px solid #7d82b1;
 	}
 		.bloco-data h3{
 			margin-bottom: -8px;
@@ -1156,3 +1155,32 @@ footer{
 
 }
 
+@media screen and (max-height: 980px) and (min-width: 1200px) {
+	.logo img{
+		width: 300px;
+		vertical-align: baseline;
+	}
+
+	.text-logo-big{
+		font-size: 106px;
+		color: #34316e;
+	}
+
+	.text-logo-normal{
+		font-size: 29.2px;
+		text-align: justify;
+		padding-top: 10px;
+		color: #34316e; 
+	}
+
+	.logo-total{ 
+			display: flex; 
+			justify-content: center;
+	}
+
+	.logo-text{
+		width: 45%;
+	}
+
+
+}
