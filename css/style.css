@@ -262,6 +262,7 @@ svg.brv-2 {
 		color: #a5a9cc;
 	}
 
+
 	/* -----------------------------------------------------------  Conteúdo Home ----------------------------------------------------------- */
 	.text-topics{ 
 		padding: 25px 30px;
@@ -440,7 +441,7 @@ footer{
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 	.content-header{ 
-		top: 12%;
+		top: 7%;
 	}
 	.info{
 	}	
@@ -534,8 +535,19 @@ footer{
 
 	}
 
-	.text-logo-big{ 
+	.text-logo-big2{ 
 		font-size: 60px !important;
+	}
+}
+
+@media screen and (max-width:766px) {
+	.bloco-logo{ 
+		width: 700px;
+
+	}
+
+	.cabecalho{
+		height: 1000px !important;
 	}
 }
 
@@ -543,6 +555,33 @@ footer{
 	.text-logo-big{ 
 		font-size: 40px !important;
 	}
+
+	.bloco-logo{ 
+		width: auto;
+
+	}
+
+	.logo img{ 
+		width: 160px;
+
+	}
+
+	.cabecalho{
+		height: 770px !important;
+	}
+	
+
+	.logo{ 
+		height: 160px !important; 
+		margin-bottom: 10px !important;
+
+	}
+
+	.info-sub{
+		top: 11%;
+	}
+	
+
 
 	.mobile{
 		font-size: 25px !important;
@@ -573,13 +612,12 @@ footer{
 		font-size: 20px;
 
 	}
-	.cabecalho{ height: 980px !important;
+	.cabecalho{ height: 780px !important;
 	}
 
 	.video p{
 		font-size:40px; 
 	}
-	
 
 	.location, .location a{
 		font-size: 19px !important;
@@ -608,7 +646,7 @@ footer{
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 364px) {
 	.bloco-data p{ 
 		font-size: 1.5em;
 
@@ -666,9 +704,11 @@ footer{
 		width: 110px;
 	}
 
+	.text-logo-big{
+		font-size: 30px !important;
+	}
+	
 }
-
-
 
 /* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -727,7 +767,7 @@ footer{
 		}
 
 		.mobile{
-			font-size: 39.99px;
+			font-size: 37.2px;
 			text-align: justify;
 			line-height: 45px;
 			color: #34316e;
@@ -845,6 +885,7 @@ footer{
 		max-width: 37%;
 
 	}
+
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */	
 
 	.btn-menu{
@@ -1060,6 +1101,15 @@ footer{
 		background-position: center;
 		border-radius: 30px;
 	}
+
+	.bloco-logo{
+		width: 950px;
+		
+	}
+
+	.text-logo-big{
+		
+	}
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */
 	.btn-menu{
 		display: none;
@@ -1120,12 +1170,12 @@ footer{
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
 	.text-logo-big{ 
-		font-size: 142px; 
+		font-size: 115px; 
 		text-align: justify;
 	}
 
 	.text-logo-normal{
-		font-size: 38.9px;
+		font-size: 31.7px;
 		text-align: justify;
 	}
 
