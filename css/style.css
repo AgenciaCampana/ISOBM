@@ -338,14 +338,6 @@ svg.brv-2 {
 		color: #34316e;
 	}
 
-
-/* -----------------------------------------------------------  Parceiros -----------------------------------------------------------  */
-.partners{
-	background-color: #666666;
-	height: 80px;
-	border: 1px solid #fff;
-}
-
 /* -----------------------------------------------------------  Footer -----------------------------------------------------------  */
 
 footer{
@@ -1076,7 +1068,7 @@ footer{
 	.menu{
 		display: flex;
 		justify-content: center;
-		padding: 47px 0px;
+		padding: 25px 0px;
 		width: 100%;
 		transform: translateX(0px);
 		position: absolute;
