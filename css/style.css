@@ -356,29 +356,43 @@ footer{
 	background-size: cover;
 	background-position: center;
 }
+	.total-footer{
+		position: relative;
+		padding-top: 42px;
+	}	
 
-.txt-footer p{
-	position: relative;
-	font-size: 24px;
-	margin-bottom: 0px;
-	color: #34316e;
-	z-index: 2;
-	text-align: center;
-}
+		.ft-mobile{
+			display: none;
+		}
 
-.credit-campana img{
-	display: block;
-	position: relative;
-	z-index: 2;
+		.ft-normal{
+			display: block;
+		}
+
+
+.ft-normal .credit-campana img { 
+	display: block; 
 	margin: 0px auto;
-	margin-top: 10px;
-	width: 120px;
+
+
 }
 
-.total-footer{
-	position: relative;
-	padding-top: 42px;
-}
+		.txt-footer p{
+			position: relative;
+			font-size: 24px;
+			margin-bottom: 0px;
+			color: #34316e;
+			z-index: 2;
+			text-align: center;
+		}
+
+		.credit-campana img{
+			display: block;
+			position: relative;
+			z-index: 2;
+			margin-top: 10px;
+			width: 120px;
+		}
 
 /* -----------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------  Media Queries -----------------------------------------------------------  
@@ -433,7 +447,8 @@ footer{
 	}
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
-	.content-header{ top: 12%;
+	.content-header{ 
+		top: 12%;
 	}
 	.info{
 	}	
@@ -563,7 +578,7 @@ footer{
 
 @media screen and (max-width: 494px) {
 	.txt-footer p{ 
-		font-size: 15px;
+		font-size: 20px;
 
 	}
 	.cabecalho{ height: 980px !important;
@@ -578,6 +593,26 @@ footer{
 		font-size: 19px !important;
 	}
 
+	.ft-mobile{
+		display: block;
+	}
+
+	.ft-normal{
+		display: none;
+	}
+
+	.credit-campana{
+		font-size: 20px;
+		color: #34316e;
+		text-align: center;
+	}
+
+	.credit-campana img{
+		display: inline;
+		margin-top: 0px;
+		margin-left: 6px;
+		width: 120px;
+	}
 
 }
 
@@ -610,6 +645,33 @@ footer{
 
 	.logo-iso-menu{
 		display: none;
+	}
+
+	.sbpc {
+		margin-top: 40px;
+
+	}
+
+	
+	.ft-mobile{
+		display: block;
+	}
+
+	.ft-normal{
+		display: none;
+	}
+
+	.credit-campana{
+		font-size: 20px;
+		color: #34316e;
+		text-align: center;
+	}
+
+	.credit-campana img{
+		display: inline;
+		margin-top: 0px;
+		margin-left: 6px;
+		width: 110px;
 	}
 
 }
