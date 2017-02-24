@@ -450,7 +450,7 @@ footer{
 	}
 
 		.logo img{
-			width: 226px;
+			width: 260px;
 			vertical-align: baseline;
 		}
 
@@ -590,7 +590,7 @@ footer{
 	.logo{
 		margin: 0px;
 		width:100%;
-		height: 230px;
+		height: 260px;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 40px;
@@ -1305,6 +1305,19 @@ footer{
 	.logo-text{
 		width: 45%;
 	}
+
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+.mobile { 
+	font-size: 17px !important;
+
+
+}
 
 
 }
