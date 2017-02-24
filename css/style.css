@@ -1,4 +1,10 @@
-*{ font-family: 'Bebas Neue Regular'; }
+*{ 
+	font-family: 'Bebas Neue Regular'; 
+}
+
+a{
+	text-decoration: none;
+}
 
 html, body{ 
 	width: 100%;
@@ -92,7 +98,7 @@ svg.brv-2 {
 		margin: 20px;
 		background-color: rgba(0,0,0,0.0);
 		border: none;
-		font-size: 2.5em;
+		font-size: 2em;
 		cursor: pointer;
 		transition: 0.5s;
 		color: #34316e;
@@ -173,6 +179,9 @@ svg.brv-2 {
 	width: 100%; 
 	top: 21%; 
 }	
+	.content-header a{
+		text-decoration: none;
+	}
 	.logo{
 		float: left;
 		max-width: 35%;
@@ -263,11 +272,12 @@ svg.brv-2 {
 			color: #2b2568;
 		}
 			.topics p{ 
-				font-family: 'Gotham Medium Regular';
-				font-size: 12px;
+				font-family: 'Gotham Book Regular';
+				font-size: 17px;
 				color: #666666; 
 				font-weight: 300; 
-				line-height: 25px;
+				line-height: 30px; 
+				margin-bottom: 30px;
 			}
 
 				.topics i{
@@ -376,6 +386,10 @@ footer{
 
 /* -----------------------------------------------------------  Extra Small devices ----------------------------------------------------------- */
 @media screen and (max-width: 768px) {
+	
+	.saiba{
+		display: none;
+	}
 
 	.text-logo-normal{
 		display: none;
@@ -405,7 +419,7 @@ footer{
 
 	}
 
-	.info-sub{ top: 18%;
+	.info-sub{ top: 15%;
 
 	}
 
@@ -552,8 +566,7 @@ footer{
 		font-size: 15px;
 
 	}
-	.cabecalho{
-		height: 1080px !important;
+	.cabecalho{ height: 980px !important;
 	}
 
 	.video p{
@@ -607,6 +620,11 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
+		
+	.saiba{
+		display: none;
+	}
+
 	.text-logo-normal{
 		display: none;
 	}
@@ -640,7 +658,7 @@ footer{
 
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 	.content-header{
-	 top: 15%;
+	 top: 10%;
 	}
 	.info{
 		margin-top: 40px;
@@ -730,10 +748,11 @@ footer{
 				color: #2b2568;
 			}
 			.topics p{ 
-				font-family: 'Gotham Medium Regular';
-				font-size: 12px;
+				font-family: 'Gotham Book Regular';
+				font-size: 18px;
 				color: #666666; 
-				font-weight: 300;
+				font-weight: 100; 
+				margin-bottom: 30px;
 			}
 
 				.topics i{
@@ -759,8 +778,6 @@ footer{
 
 
 @media screen and (min-width: 992px) {
-	
-
 	.mobile{
 		display: none;
 	}
@@ -905,6 +922,8 @@ footer{
 					left: 72px;
 					top: 24px;
 			}
+
+
 	/* ----------------------------------------------------------- Conteúdo Cabecalho -----------------------------------------------------------  */
 
 	.content-header{
@@ -944,6 +963,7 @@ footer{
 				font-size: 18px;
 				line-height: 35px;
 				font-family: 'Gotham Book Regular';
+				margin-bottom: 30px;
 			}
 
 		.parceiros{

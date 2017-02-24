@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ISOBM</title>
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -21,9 +19,17 @@
 				<li class="home-menu-roll"><a href="index.html">Home</a></li>
 				<li><a href="organization.html">Organization</a></li>
 				<li><a href="program.html">Program</a></li>
-				<a class="logo-iso-menu"><img src="img/isobm_logo.png" alt=""></a>
+				<a class="logo-iso-menu" href="index.html"><img src="img/isobm_logo.png" alt=""></a>
 				<li><a href="congress.html">Congress Venue</a></li>
+				<li><a href="#">Support</a></li>
 				<li><a href="contact.html">Contact us</a></li>
+				<!-- <li class="dropdown" id="dropdownMenu1" data-toggle="dropdown" >Support
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">SBPC/ML - Brazilian Society of Clinical Pathology and Laboratory Medicine</a></li>
+					    <li><a href="#">Brazilian Laboratory Indicators Program</a></li>
+					    <li><a href="#">Brazilian Journal of Pathology and Laboratory Medicine</a></li>
+					</ul>
+				</li> -->
 			</ul>
 		</nav>
 		<!-- Cebeçalho -->
@@ -63,9 +69,11 @@
 							<p>7 a 10 de setembro de 2017</p>
 							<h3>rio de janeiro, brasil</h3>
 						</div>
-						<div class="col-lg-4 col-md-4 col-xs-12 bloco-local">
-							<h3>Rio Othon Palace</h3>
-						</div>
+						<a href="congress.html">
+							<div class="col-lg-4 col-md-4 col-xs-12 bloco-local">
+								<h3>Rio Othon Palace</h3>
+							</div>
+						</a>
 						<div class="col-lg-4 col-md-4 col-xs-12 btn-inscreva-se">
 							<h2>INSCREVA-SE AQUI</h2>
 						</div>
@@ -153,29 +161,18 @@
 			<div class="credit-campana"><img src="img/agencia-campana_logo.png" alt=""></div>
 		</div>
 	</footer>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="js/functions.js"></script>
-	<script>
-		var tamanhoCabecalho = function () {
-			var tamanhoTela = $(window).height();
-			var larguraTela = $(window).width();
-			if (larguraTela > 770) {
-				if (tamanhoTela > 890) {
-					$(".cabecalho").height(tamanhoTela - 50);
-				}
-				else {
-					$(".cabecalho").height(870);
-				}
-			}
-			else {
-				$(".cabecalho").height(950);
-			}
-		}
-		$(window).resize(function () {
-			tamanhoCabecalho();
-		});
-		$(document).ready(function () {
-			tamanhoCabecalho();
-		});
+	<script type="text/javascript">
+		var $doc = $('html, body');
+			$('a').on('click', function() {
+				var topo = $( $.attr(this, 'href') ).offset().top;
+			    $doc.animate({
+			        scrollTop: topo - 120
+			    }, 800);
+			    return false;
+			});
 	</script>
 </body>
 </html>

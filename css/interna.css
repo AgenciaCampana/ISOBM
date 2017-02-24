@@ -1,14 +1,21 @@
+a{
+	text-decoration: none;
+}
 
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
 
 .assinatura{
 	margin-top: 30px !important;
-	margin-bottom: 0px;
-	font-size: 25px !important;
+	margin-bottom: 0px !important;
+	font-size: 15px !important;
 	color: #34316e !important;
 }
 
 .cargo{
-	font-size: 16px !important;
+	font-size: 10px !important;
 	font-style: italic;
 }
 
@@ -151,8 +158,8 @@
 
 .location, .location a{
 	font-size: 25px;
-	margin-top: 40px;
 	color: #312e6f;
+	margin: 40px 0px;
 }
 
 .location a:hover{
@@ -304,8 +311,56 @@
 
 .location p, .location a {
 	font-family: 'Gotham Book Regular';
-	font-size: 21px;
-	text-transform: uppercase;
+	font-size: 18px;
+	color: #666;
+}
+
+.carousel, 
+.slide-foto,
+.slide,
+.carousel-inner,
+.carousel-control,
+.carousel-inner> .item,
+.carousel-inner>.item.active {
+	    border-radius: 30px; /* Opera 10.5, IE9, Saf5, Chrome, FF4 */
+	    overflow:hidden;
+}
+
+.carosel-indicators{
+	display: none;
+	float: right;
+	text-align: center;
+}
+
+.carosel-indicators img{
+	width: 75%;
+	padding: 2% 0%;
+	height: 100px;
+	border-radius: 20px;
+	filter: grayscale(1);
+	transition: all 0.2s ease;
+}
+
+.carosel-indicators img:hover{
+	filter: grayscale(0);
+}
+
+.carosel-indicators .active {
+	filter: grayscale(0);
+}
+
+.slide-foto{
+	display: block;
+	max-width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.slide-total{
+	margin-top: 40px;
+
 }
 
 @media screen and (max-width: 768px){
@@ -394,6 +449,7 @@
 	.one , .two{
 		margin-top: 50px;
 	}
+
 }
 
 @media screen and (min-width: 992px) {
@@ -416,6 +472,14 @@
 	
 	.content-section section{
 		text-align: left;
+	}
+
+	.carosel-indicators{
+		display: block;
+	}
+
+	.slide{
+		padding-right: 0px;
 	}
 
 }

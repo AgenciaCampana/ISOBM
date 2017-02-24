@@ -1,11 +1,3 @@
-var $doc = $('html, body');
-$('a').on('click', function() {
-	var topo = $( $.attr(this, 'href') ).offset().top;
-    $doc.animate({
-        scrollTop: topo - 120
-    }, 800);
-    return false;
-});
 
 // Script Menu Mobile
 $('.btn-menu').on('click touchstart', function(e){
@@ -21,16 +13,38 @@ var nav = $('.menu');
 			if ($(this).scrollTop() > 136) {
 				nav.addClass("fixed");
 				$('.logo-iso-menu').css('display','initial');
-				$('.home-menu-roll').css('display','none');
+				// $('.home-menu-roll').css('display','none');
 			} 
 			else {
 				nav.removeClass("fixed");
 				$('.logo-iso-menu').css('display','none');
-				$('.home-menu-roll').css('display','inline-block');
+				// $('.home-menu-roll').css('display','inline-block');
 			}
 		}
 		else {
 			nav.removeClass("fixed");
 		}
 	});
+});
+
+var tamanhoCabecalho = function () {
+	var tamanhoTela = $(window).height();
+	var larguraTela = $(window).width();
+	if (larguraTela > 991) {
+		if (tamanhoTela > 890) {
+			$(".cabecalho").height(tamanhoTela - 50);
+		}
+		else {
+			$(".cabecalho").height(870);
+		}
+	}
+	else {
+		$(".cabecalho").height(870);
+	}
+}
+$(window).resize(function () {
+	tamanhoCabecalho();
+});
+$(document).ready(function () {
+	tamanhoCabecalho();
 });

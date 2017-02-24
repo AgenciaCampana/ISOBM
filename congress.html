@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ISOBM</title>
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -21,9 +19,17 @@
 				<li class="home-menu-roll"><a href="index.html">Home</a></li>
 				<li><a href="organization.html">Organization</a></li>
 				<li><a href="program.html">Program</a></li>
-				<a class="logo-iso-menu"><img src="img/isobm_logo.png" alt=""></a>
+				<a class="logo-iso-menu" href="index.html"><img src="img/isobm_logo.png" alt=""></a>
 				<li><a href="congress.html">Congress Venue</a></li>
+				<li><a href="#">Support</a></li>
 				<li><a href="contact.html">Contact us</a></li>
+				<!-- <li class="dropdown" id="dropdownMenu1" data-toggle="dropdown" >Support
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a href="#">SBPC/ML - Brazilian Society of Clinical Pathology and Laboratory Medicine</a></li>
+					    <li><a href="#">Brazilian Laboratory Indicators Program</a></li>
+					    <li><a href="#">Brazilian Journal of Pathology and Laboratory Medicine</a></li>
+					</ul>
+				</li> -->
 			</ul>
 		</nav>
 		<!-- Cebeçalho -->
@@ -32,14 +38,16 @@
 				<div class="pelicula"></div>
 				<!-- Conteúdo Cabeçalho -->
 				<div class="content-header">
-					<div class="container">
-						<div class="row center">
-							<div class="logo2">
-								<img src="img/isobm_logo.png" alt="">
+					<a href="index.html">
+						<div class="container">
+							<div class="row center">
+								<div class="logo2">
+									<img src="img/isobm_logo.png" alt="">
+								</div>
+									<h1 class="text-logo-big2">44º congresso anual da isobm</h1>
 							</div>
-								<h1 class="text-logo-big2">44º congresso anual da isobm</h1>
 						</div>
-					</div>
+					</a>
 					<div class="container-fluid title-page">
 						<div class="row">
 							<div class="curva-2">
@@ -91,6 +99,52 @@
 					</div>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.2524552044606!2d-43.188801399999996!3d-22.9777423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd547345cd851%3A0xdfbcb038384c36a1!2sRio+Othon+Palace!5e0!3m2!1spt-BR!2sbr!4v1487710132047" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
+			
+				<div class="row slide-total">
+					<ol class="carosel-indicators list-unstyled col-md-2">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><img src="img/rioothon-0003.jpg" alt="..."></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"><img src="img/rioothon-0140.jpg" alt="..."></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"><img src="img/rioothonpalace-7483.jpg" alt="..."></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"><img src="img/roph_apts-dlx-7-red.jpg" alt="..."></li>
+						<li data-target="#carousel-example-generic" data-slide-to="4"><img src="img/skylab-dia.jpg" alt="..."></li>
+					</ol>
+					<div class="slide col-md-10 col-sm-12">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active" >
+								<div class="slide-foto" style="background-image: url('img/rioothon-0003.jpg');"></div>
+								</div>
+
+								<div class="item">
+								<div class="slide-foto" style="background-image: url('img/rioothon-0140.jpg');"></div>
+								</div>
+
+								<div class="item">
+								<div class="slide-foto" style="background-image: url('img/rioothonpalace-7483.jpg');"></div>
+								</div>
+
+								<div class="item">
+								<div class="slide-foto" style="background-image: url('img/roph_apts-dlx-7-red.jpg');"></div>
+								</div>
+
+								<div class="item">
+								<div class="slide-foto" style="background-image: url('img/skylab-dia.jpg');"></div>
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+<!-- 		
 				<div class="row space-img">
 					<div class="col-md-offset-1 col-md-2 col-lg-2 col-sm-6 col-xs-12">
 						<div class="img-gallery" style="background-image: url(img/rioothon-0003.jpg);"></div>
@@ -107,10 +161,15 @@
 					<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12">
 						<div class="img-gallery" style="background-image: url(img/skylab-dia.jpg);"></div>
 					</div>
-				</div>
+				</div> -->
 			</div>	
 		</div>
 	</main>
+
+	<style>
+
+	</style>
+
 	<footer>
 		<div class="pelicula"></div>
 		<div class="total-footer">
@@ -118,6 +177,13 @@
 			<div class="credit-campana"><img src="img/agencia-campana_logo.png" alt=""></div>
 		</div>
 	</footer>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/swipe.min.js"></script>
 		<script src="js/functions.js"></script>
+
+		<script>
+			$('.carousel').bcSwipe({ threshold: 50 });
+		</script>
 	</body>
 </html>
