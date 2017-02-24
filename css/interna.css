@@ -391,6 +391,12 @@ a{
 }
 
 
+@media screen (max-width: 420px){
+	.text-logo-big2{
+		font-size: 50px;
+	}
+}
+
 @media screen and (max-width: 768px){
 	
 
