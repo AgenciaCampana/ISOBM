@@ -382,6 +382,10 @@ a{
 
 }
 
+.block-support a{
+	text-decoration: none;
+}
+
 .block:hover{
 	background-color: #a5a9cc;
 }
