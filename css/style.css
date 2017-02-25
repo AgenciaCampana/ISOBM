@@ -645,7 +645,7 @@ footer{
 
 }
 
-@media screen and (max-width: 364px) {
+@media screen and (max-width: 487px) {
 	.bloco-data p{ 
 		font-size: 1.5em;
 
@@ -766,7 +766,7 @@ footer{
 		}
 
 		.mobile{
-			font-size: 37.2px;
+			font-size: 40.9px;
 			text-align: justify;
 			line-height: 45px;
 			color: #34316e;
@@ -1285,12 +1285,12 @@ footer{
 	}
 
 	.text-logo-big{
-		font-size: 106px;
+		font-size: 87px;
 		color: #34316e;
 	}
 
 	.text-logo-normal{
-		font-size: 29.2px;
+		font-size: 24.2px;
 		text-align: justify;
 		padding-top: 10px;
 		color: #34316e; 
