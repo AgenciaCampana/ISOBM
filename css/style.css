@@ -538,6 +538,14 @@ footer{
 	.text-logo-big2{ 
 		font-size: 60px !important;
 	}
+
+	.center{ 
+		top: 50px !important;
+	}
+
+	.title-page{
+		margin-top: 100px !important;
+	}
 }
 
 @media screen and (max-width:766px) {
@@ -705,6 +713,10 @@ footer{
 
 	.text-logo-big{
 		font-size: 30px !important;
+	}
+
+	.text-logo-big2{
+		font-size: 45px !important;
 	}
 	
 }
