@@ -37,7 +37,9 @@ svg.brv {
 	width: 100%;
 	position: absolute; 
 	bottom: -1px;
+	left: 0px;
 }
+
 .curva-2 {
 	position: absolute;
 	width: 100%;
