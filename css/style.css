@@ -1290,19 +1290,19 @@ footer{
 
 }
 
-@media screen and (max-height: 980px) and (min-width: 992px) {
+@media screen and (max-height: 830px) and (min-width: 992px) {
 	.logo img{
 		width: 300px;
 		vertical-align: baseline;
 	}
 
 	.text-logo-big{
-		font-size: 87px;
+		font-size: 86px;
 		color: #34316e;
 	}
 
 	.text-logo-normal{
-		font-size: 24.2px;
+		font-size: 23.2px;
 		text-align: justify;
 		padding-top: 10px;
 		color: #34316e; 

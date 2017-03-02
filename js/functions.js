@@ -35,11 +35,11 @@ var tamanhoCabecalho = function () {
 			$(".cabecalho").height(tamanhoTela - 50);
 		}
 		else {
-			$(".cabecalho").height(870);
+			$(".cabecalho").height(830);
 		}
 	}
 	else {
-		$(".cabecalho").height(870);
+		$(".cabecalho").height(830);
 	}
 }
 $(window).resize(function () {
