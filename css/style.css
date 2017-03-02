@@ -11,6 +11,10 @@ html, body{
 	overflow-x: hidden;
 }
 
+sup, small{
+	color: #34316e !important; 
+}
+
 @font-face {
 font-family: 'Bebas Neue Regular';
 font-style: normal;
@@ -119,6 +123,15 @@ svg.brv-2 {
 		background-color: rgba(255,255,255,0.96);
 		height: 120px !important;
 		padding: 10px 0px !important;
+	}
+
+	.text-logo-big2-1{
+		font-size: 85px;
+		height: 75px;
+	}
+
+	.text-logo-big2-2{
+		font-size: 48px;
 	}
 
 
@@ -394,7 +407,7 @@ footer{
 
 /* -----------------------------------------------------------  Extra Small devices ----------------------------------------------------------- */
 @media screen and (max-width: 768px) {
-	
+
 	.saiba{
 		display: none;
 	}
@@ -548,6 +561,7 @@ footer{
 	.title-page{
 		margin-top: 100px !important;
 	}
+
 }
 
 @media screen and (max-width:766px) {
@@ -577,7 +591,7 @@ footer{
 	}
 
 	.cabecalho{
-		height: 770px !important;
+		height: 830px !important;
 	}
 	
 
@@ -653,9 +667,6 @@ footer{
 		width: 120px;
 	}
 
-}
-
-@media screen and (max-width: 487px) {
 	.bloco-data p{ 
 		font-size: 1.5em;
 
@@ -677,7 +688,7 @@ footer{
 
 
 	.mobile{
-		font-size: 17px !important;; 
+		font-size: 17px !important;
 		line-height: 25px;
 	}
 
@@ -720,13 +731,22 @@ footer{
 	.text-logo-big2{
 		font-size: 45px !important;
 	}
-	
+
 }
 
 /* -----------------------------------------------------------  Small devices ----------------------------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	/* ----------------------------------------------------------- Cabecalho -----------------------------------------------------------  */
 	
+	.text-logo-big1-1{
+		font-size: 145px;
+		height: 160px;
+		margin-top: -10px;
+	}
+
+	.text-logo-big1-2{
+		font-size: 82px;
+	}
 		
 	.saiba{
 		display: none;
@@ -775,7 +795,7 @@ footer{
 	}
 
 		.logo img{
-			width: 226px;
+			width: 250px;
 			vertical-align: baseline;
 		}
 
@@ -889,14 +909,31 @@ footer{
 		display: none;
 	}
 
-
 	.text-logo-normal{
 		display: block;
 	}
 
 	.logo{ 
 		max-width: 37%;
+	}
 
+	.text-logo-big1-1{
+		font-size: 180px;
+		height: 160px;
+		margin-top: -10px;
+	}
+
+	.text-logo-big1-2{
+		font-size: 101px;
+	}
+
+	.text-logo-big2-1{
+		font-size: 115px;
+		height: 110px;
+	}
+
+	.text-logo-big2-2{
+		font-size: 65px;
 	}
 
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */	
@@ -1117,11 +1154,25 @@ footer{
 
 	.bloco-logo{
 		width: 950px;
-		
 	}
 
-	.text-logo-big{
-		
+	.text-logo-big1-1{
+		font-size: 180px;
+		height: 160px;
+		margin-top: -10px;
+	}
+
+	.text-logo-big1-2{
+		font-size: 101px;
+	}
+
+	.text-logo-big2-1{
+		font-size: 147px;
+		height: 140px;
+	}
+
+	.text-logo-big2-2{
+		font-size: 82px;
 	}
 	/* -----------------------------------------------------------  Menu ----------------------------------------------------------- */
 	.btn-menu{
@@ -1304,7 +1355,7 @@ footer{
 	}
 
 	.text-logo-normal{
-		font-size: 23.2px;
+		font-size: 23.7px;
 		text-align: justify;
 		padding-top: 10px;
 		color: #34316e; 
@@ -1330,6 +1381,18 @@ footer{
 	.cabecalho{
 		height: 680px !important; 
 	}
+
+	.text-logo-big1-1{
+		font-size: 135px;
+		height: 126px;
+		margin-top: -10px;
+	}
+
+	.text-logo-big1-2{
+		font-size: 76px;
+	}
+
+
 }
 
 
