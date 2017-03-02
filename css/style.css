@@ -365,12 +365,11 @@ footer{
 		}
 
 
-.ft-normal .credit-campana img { 
-	display: block; 
-	margin: 0px auto;
+		.ft-normal .credit-campana img { 
+			display: block; 
+			margin: 0px auto;
 
-
-}
+		}
 
 		.txt-footer p{
 			position: relative;
@@ -446,7 +445,8 @@ footer{
 		top: 8%;
 	}
 	.info{
-	}	
+	}
+	
 	.logo-total{
 		margin-bottom: 0px;
 	}
@@ -541,7 +541,7 @@ footer{
 		font-size: 60px !important;
 	}
 
-	.center{ 
+	.center a{ 
 		top: 50px !important;
 	}
 
