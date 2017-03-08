@@ -403,7 +403,7 @@ a{
 	}
 
 	.text-logo-normal-22{
-		
+
 	}
 }
 
@@ -480,12 +480,17 @@ a{
 	}
 
 	.logo2{
-		max-width: 100%;;
+		max-width: 100%;
+	}
+
+	
+	.linha-2{
+		margin-top: 20px;
 	}
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.text-logo h1{
 		font-size: 7em;
 	}
