@@ -420,6 +420,10 @@ footer{
 			display: block;
 		}
 
+		.ft-normal img{
+			width: 130px;
+		}
+
 
 		.ft-normal .credit-campana img { 
 			display: block; 
@@ -647,6 +651,39 @@ footer{
 		text-align: center;
 
 	}
+
+
+}
+
+
+
+@media screen and (max-width: 546px) {
+	.ft-mobile{
+		display: block;
+	}
+
+	.ft-normal{
+		display: none;
+	}
+
+
+	.credit-campana{
+		font-size: 20px;
+		color: #34316e;
+		text-align: center;
+	}
+
+	.credit-campana img{
+		display: inline;
+		margin-top: 0px;
+		margin-left: 6px;
+		width: 120px;
+	}
+
+	.cabecalho{ 
+	height: 1050px !important;
+
+	}
 }
 
 @media screen and (max-width: 494px) {
@@ -663,27 +700,6 @@ footer{
 
 	.location, .location a{
 		font-size: 19px !important;
-	}
-
-	.ft-mobile{
-		display: block;
-	}
-
-	.ft-normal{
-		display: none;
-	}
-
-	.credit-campana{
-		font-size: 20px;
-		color: #34316e;
-		text-align: center;
-	}
-
-	.credit-campana img{
-		display: inline;
-		margin-top: 0px;
-		margin-left: 6px;
-		width: 120px;
 	}
 
 	.saiba-mais{
@@ -711,15 +727,6 @@ footer{
 
 	}
 
-	
-	.ft-mobile{
-		display: block;
-	}
-
-	.ft-normal{
-		display: none;
-	}
-
 	.credit-campana{
 		font-size: 20px;
 		color: #34316e;
@@ -744,12 +751,10 @@ footer{
 	.text-logo-normal-2{ 
 		font-size: 16px; 
 		line-height: 20px;
-
 	}
 	
 	.bloco-data{ 
-	font-size: 25px;
-
+		font-size: 25px;
 	}
 
 }
@@ -770,8 +775,7 @@ footer{
 	}
 
 	.bloco-data{ 
-	font-size: 30px;
-
+		font-size: 30px;
 	}
 
 	.text-logo-big1-1{
